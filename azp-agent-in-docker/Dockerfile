@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt update -y && apt upgrade -y && apt install curl git jq libicu70 -y
+RUN apt update -y && apt upgrade -y && apt install curl git jq libicu70 maven -y
 
 # Also can be "linux-arm", "linux-arm64".
 ENV TARGETARCH="linux-x64"
